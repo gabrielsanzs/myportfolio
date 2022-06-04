@@ -107,7 +107,7 @@ html {
 }
 
 
-.home .home-content a {
+.home .home-content .message{
   display: inline-block;
   background: rgba(129, 46, 150);
   color: #fff;
@@ -119,10 +119,64 @@ html {
   transition: all 0.3s ease;
 }
 
-.home .home-content a:hover {
+.home .home-content .message:hover {
   color: rgba(129, 46, 150);
   background: none;
 }
+
+/*Networks icones*/
+
+.home .home-content .linkedin{
+  color: #2e74b9;
+  transition: all 0.5s ease;
+}
+
+.home .home-content .linkedin:hover{
+  color: rgba(129, 46, 150);
+  text-shadow: 2px 2px 3px #0a66c2, 3px 3px 5px #0a66c2;
+}
+
+.home .home-content .github{
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+
+.home .home-content .github:hover{
+  color: rgba(129, 46, 150);
+  text-shadow: 2px 2px 3px #ffffff, 3px 3px 5px #ffffff;
+}
+
+.home .home-content .whatsapp{
+  color: #56d062;
+  transition: all 0.5s ease;
+}
+
+.home .home-content .whatsapp:hover{
+  color: rgba(129, 46, 150);
+  text-shadow: 2px 2px 3px #56d062, 3px 3px 5px #56d062;
+}
+
+.home .home-content .gmail{
+  color: #ea4335;
+  transition: all 0.5s ease;
+}
+
+.home .home-content .gmail:hover{
+  color: rgba(129, 46, 150);
+  text-shadow: 2px 2px 3px #ea4335, 3px 3px 5px #ea4335;
+}
+
+.home .home-content .discord{
+  color: #4e62ee;
+  transition: all 0.5s ease;
+}
+
+.home .home-content .discord:hover{
+  color: rgba(129, 46, 150);
+  text-shadow: 2px 2px 3px #4e62ee, 3px 3px 5px #4e62ee;
+}
+
+/**/
 
 .home .home-content .home-icon i{
   display: inline-flex;
@@ -321,7 +375,7 @@ section {
   position: absolute;
   bottom: 0px;
   left: 50%;
-  width: 270px;
+  width: 170px;
   height: 4px;
   background: rgba(129, 46, 150);
   transform: translateX(-50%);
