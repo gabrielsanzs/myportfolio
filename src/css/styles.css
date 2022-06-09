@@ -132,8 +132,8 @@ html {
 }
 
 .home .home-content .linkedin:hover{
-  color: rgba(129, 46, 150);
-  text-shadow: 2px 2px 3px #0a66c2, 3px 3px 5px #0a66c2;
+  color: #2e74b9;
+  text-shadow: 1px 1px 2px #0a66c2, 1px 1px 3px #0a66c2;
 }
 
 .home .home-content .github{
@@ -142,8 +142,8 @@ html {
 }
 
 .home .home-content .github:hover{
-  color: rgba(129, 46, 150);
-  text-shadow: 2px 2px 3px #ffffff, 3px 3px 5px #ffffff;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px #ffffff, 1px 1px 3px #ffffff;
 }
 
 .home .home-content .whatsapp{
@@ -152,8 +152,8 @@ html {
 }
 
 .home .home-content .whatsapp:hover{
-  color: rgba(129, 46, 150);
-  text-shadow: 2px 2px 3px #56d062, 3px 3px 5px #56d062;
+  color: #56d062;
+  text-shadow: 1px 1px 2px #56d062, 1px 1px 3px #56d062;
 }
 
 .home .home-content .gmail{
@@ -162,8 +162,8 @@ html {
 }
 
 .home .home-content .gmail:hover{
-  color: rgba(129, 46, 150);
-  text-shadow: 2px 2px 3px #ea4335, 3px 3px 5px #ea4335;
+  color: #ea4335;
+  text-shadow: 1px 1px 2px #af4c43, 1px 1px 3px #af4c43;
 }
 
 .home .home-content .discord{
@@ -172,11 +172,9 @@ html {
 }
 
 .home .home-content .discord:hover{
-  color: rgba(129, 46, 150);
-  text-shadow: 2px 2px 3px #4e62ee, 3px 3px 5px #4e62ee;
+  color: #4e62ee;
+  text-shadow: 1px 1px 2px #5f6bc0, 1px 1px 3px #5f6bc0;
 }
-
-/**/
 
 .home .home-content .home-icon i{
   display: inline-flex;
@@ -282,7 +280,34 @@ section {
   background: none;
 }
 
-/*Redes*/
+/*Projetos*/
+
+.projects{
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+.projects .projects-title{
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 2px;
+  text-align: center;
+
+}
+
+.projects .projects-title:before{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  width: 170px;
+  height: 4px;
+  background: rgba(129, 46, 150);
+  transform: translateX(-50%);
+}
 
 /*Habilidades*/
 
@@ -459,7 +484,8 @@ section {
 .contact .right form .name {
   margin-right: 10px;
 }
-.contact .right form .email {
+
+.contact .right form .lastname {
   margin-left: 10px;
 }
 
@@ -528,6 +554,43 @@ footer span a:hover {
   color: white;
 }
 
+/*Modal submit*/
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal .content{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close{
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus{
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /**/
 
 @media (max-width: 1330px) {
@@ -581,6 +644,25 @@ footer span a:hover {
   .home .home-content .text-2 {
     font-size: 35px;
   }
+  .home .home-content .home-icon{
+    display: inline-flex;
+  }
+  .home .home-content .linkedin{
+    font-size: 13px;
+  }
+  .home .home-content .github{
+    font-size: 13px;
+  }
+  .home .home-content .whatsapp{
+    font-size: 13px;
+  }
+  .home .home-content .gmail{
+
+    font-size: 13px;
+  }
+  .home .home-content .discord{
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 690px) {
@@ -593,7 +675,7 @@ footer span a:hover {
   .home .home-content .text-2 {
     font-size: 32px;
   }
-  .home .home-content a {
+  .home .home-content .message{
     font-size: 20px;
     padding: 9px 25px;
   }
@@ -617,6 +699,21 @@ footer span a:hover {
   .contact .contact-content .column {
     width: 100%;
     margin-bottom: 35px;
+  }
+  .home .home-content .linkedin{
+    font-size: 13px;
+  }
+  .home .home-content .github{
+    font-size: 13px;
+  }
+  .home .home-content .whatsapp{
+    font-size: 13px;
+  }
+  .home .home-content .gmail{
+    font-size: 13px;
+  }
+  .home .home-content .discord{
+    font-size: 13px;
   }
 }
 

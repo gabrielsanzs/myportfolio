@@ -22,7 +22,7 @@
             <ul class="menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#skills">Tecnologias</a></li>
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
@@ -86,11 +86,44 @@
         </div>
     </section>
 
+    <!--Projetos-->
+
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h4 class="projects-title">Projetos</h4>
+            <div class="projects-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Jogo da Velha</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi consequatur rerum laborum sed vero? Explicabo nobis esse quas odio, suscipit dolor dolorum distinctio consectetur blanditiis magni commodi deleniti atque.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Calculadora Next.js</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi consequatur rerum laborum sed vero? Explicabo nobis esse quas odio, suscipit dolor dolorum distinctio consectetur blanditiis magni commodi deleniti atque.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Calculadora Java</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi consequatur rerum laborum sed vero? Explicabo nobis esse quas odio, suscipit dolor dolorum distinctio consectetur blanditiis magni commodi deleniti atque.</p>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+
+    </section>
+
     <!--Habilidades-->
 
     <section class="skills" id="skills">
         <div class="max-width">
-            <h4 class="skills-title">Habilidades</h3>
+            <h4 class="skills-title">Tecnologias</h3>
                 <div class="skills-content">
                     <div class="card">
                         <div class="box">
@@ -182,8 +215,6 @@
         </div>
     </section>
 
-    <!--Projetos-->
-
     <!--Contato-->
 
     <section class="contact" id="contact">
@@ -238,22 +269,22 @@
                 </div>
                 <div class="column right">
                     <div class="text">Envie uma mensagem!</div>
-                    <form action="#">
+                    <form action="https://formsubmit.co/gabrielsanchezsans@gmail.com" method="POST">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nome" required>
+                                <input type="text" placeholder="Nome" id="name" name="name" required>
                             </div>
                             <div class="field email">
-                                <input type="email" placeholder="E-mail" required>
+                                <input type="text" id="lastname" placeholder="Sobrenome" name="lastname" required>
                             </div>
                         </div>
                         <div class="field">
-                            <input type="Subject" placeholder="Empresa" required>
+                            <input type="email" id="email" placeholder="E-mail" name="email" required>
                         </div>
                         <div class="field textarea">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem" required></textarea>
+                            <textarea type="subject" id="textarea" cols="30" rows="10" placeholder="Mensagem" name="message" required></textarea>
                         </div>
-                        <div class="button">
+                        <div class="button" id="btnSubmit">
                             <button type="submit">Enviar</button>
                         </div>
                     </form>
@@ -281,6 +312,7 @@
     <!--Scripts-->
 
     <script src="./src/javascript/script.js"></script>
+    <script src="./src/javascript/app.js"></script>
 
 </body>
 

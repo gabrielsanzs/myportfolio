@@ -1,3 +1,5 @@
+/*Navbar scroll*/
+
 $(document).ready(function () {
   $(window).scroll(function () {
     if (this.scrollY > 20) {
@@ -15,6 +17,8 @@ $(document).ready(function () {
   });
 });
 
+/*Typing*/
+
 var typed = new Typed(".typing", {
   strings: ["Front-end...", "Fullstack."],
   typeSpeed: 100,
@@ -28,3 +32,4 @@ var typed = new Typed(".typing2", {
   backSpeed: 60,
   loop: true,
 });
+
