@@ -33,3 +33,4 @@ var typed = new Typed(".typing2", {
   loop: true,
 });
 
+// Carousel

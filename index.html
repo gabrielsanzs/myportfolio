@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio - Gabriel Sanchez</title>
     <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/styles.scss">
     <link rel="shortcut icon" href="./src/img/favicon-16x16.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kit.fontawesome.com/378db8d0b7.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script> 
 </head>
 
 <body>
@@ -22,8 +24,8 @@
             <ul class="menu">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
-                <li><a href="#skills">Tecnologias</a></li>
                 <li><a href="#projects">Projetos</a></li>
+                <li><a href="#skills">Tecnologias</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
             <div class="menu-btn">
@@ -74,9 +76,7 @@
                 <div class="column right">
                     <div class="text">Sou o Gabriel e sou desenvolvedor um <span>Frontend/Fullstack</span></div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium quisquam, ullam
-                        necessitatibus sint sit hic laborum, enim porro doloremque consequatur culpa laboriosam sapiente
-                        aspernatur sunt expedita illum repellat nostrum quos
+                        Nasci em 06 de março do ano 2000 em Cianorte, Parána - Brasil, e sempre fui apaixonado por tecnologia e informática, sou uma pessoa extremamente tranquila e amigável, consigo fazer várias coisas de uma vez e continuar focado, sou ótimo com trabalhos em equipe ou até mesmo sozinho, sempre procurando ser melhor do que ontem e ajudar as pessoas em tudo no que eu posso. Ainda sou iniciante na area do desenvolvimento, estou cursando Analise e Desenvolvimento de sistemas, tenho foco em me especializar como Desenvolvedor Frontend/Mobile e também ser um Fullstack dos bons. <span class="frase">Sempre aprendendo e sempre em frente!</span> 
                     </p>
                     <a href="./src/others/Currículo.pdf" download="Currículo.pdf" type="application/pdf">
                         <i class="fa-solid fa-file-arrow-down" style="padding-right: 10px"></i> Baixe meu CV 
@@ -88,35 +88,111 @@
 
     <!--Projetos-->
 
-    <section class="projects" id="projects">
+    <section class="projects" id="projects"> <!--Container-->
         <div class="max-width">
-            <h4 class="projects-title">Projetos</h4>
-            <div class="projects-content">
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-paint-brush"></i>
-                        <div class="text">Jogo da Velha</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi consequatur rerum laborum sed vero? Explicabo nobis esse quas odio, suscipit dolor dolorum distinctio consectetur blanditiis magni commodi deleniti atque.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">Calculadora Next.js</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi consequatur rerum laborum sed vero? Explicabo nobis esse quas odio, suscipit dolor dolorum distinctio consectetur blanditiis magni commodi deleniti atque.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Calculadora Java</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi consequatur rerum laborum sed vero? Explicabo nobis esse quas odio, suscipit dolor dolorum distinctio consectetur blanditiis magni commodi deleniti atque.</p>
-                    </div>
+            <h2 class="projects-title">Projetos</h2>
+        </div>
+        <section>
+            <div class="container">
+                <div class="carousel">
+                    <input type="radio" name="slides" checked="checked" id="slide-1">
+                    <input type="radio" name="slides" id="slide-2">
+                    <input type="radio" name="slides" id="slide-3">
+                    <input type="radio" name="slides" id="slide-4">
+                    <input type="radio" name="slides" id="slide-5">
+                    <input type="radio" name="slides" id="slide-6">
+                    <ul class="carousel__slides">
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="src/img/embreve.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    <h3>Auto-Bot</h3>
+                                    Bot de atendimento para Whatsapp.
+                                    <span class="line">_____________________</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="src/img/embreve.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.    
+                                    <span class="line">_____________________</span>               
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="src/img/embreve.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="line">_____________________</span>                       
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="src/img/embreve.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="line">_____________________</span>                         
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="src/img/embreve.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.  
+                                    <span class="line">_____________________</span>                      
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="src/img/embreve.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    <span class="line">_____________________</span>                           
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>    
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="slide-1"><img src="src/img/embreve.jpg" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-2"><img src="src/img/embreve.jpg" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-3"><img src="src/img/embreve.jpg" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-4"><img src="src/img/embreve.jpg" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-5"><img src="src/img/embreve.jpg" alt=""></label>
+                        </li>
+                        <li>
+                            <label for="slide-6"><img src="src/img/embreve.jpg" alt=""></label>
+                        </li>
+                    </ul>
                 </div>
             </div>
-           
-        </div>
-
+        </section>
     </section>
 
     <!--Habilidades-->
@@ -197,10 +273,10 @@
                     </div>
                     <div class="card">
                         <div class="box">
-                            <img src="./src/img/kisspng-logo-c-5ae210bc8bdbb1.8043527715247648605729.png" alt=""
+                            <img src="./src/img/ts-logo-128.png" alt=""
                                 class="skills-img">
-                            <div class="text">C</div>
-                            <p>Intermediario</p>
+                            <div class="text">Typescript</div>
+                            <p>Iniciante</p>
                         </div>
                     </div>
                     <div class="card">
