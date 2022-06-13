@@ -10,11 +10,10 @@
 
 :root{
   --body-bg: #fafafa;
-  --body-color: #111;
-  --icon-type: ;
+  --body-color: black;
 }
 
-.darkmode:root{
+.darkmode{
   --body-bg: #212529;
   --body-color: white;
 }
@@ -48,7 +47,7 @@ body{
 }
 .navbar.sticky {
   padding: 5px 0;
-  background: rgba(129, 46, 150, 0.349);
+  background: rgba(129, 46, 150, 0.747);
 }
 
 
@@ -87,7 +86,7 @@ body{
   color: #fff;
 }
 
-.navbar .menu label{
+/*.navbar .menu label{
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
@@ -97,8 +96,15 @@ body{
 
 .navbar .menu input{
   margin-left: 10px;
-}
+}*/
 
+#switch{
+  cursor: pointer;
+  width: 30px;
+  display: inline-flex;
+  margin-left: 19px;
+  position: fixed;
+}
 
 .menu-btn {
   color: #fff;

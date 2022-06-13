@@ -1,4 +1,4 @@
-/*Navbar scroll*/
+/*Navbar Sticky scroll*/
 
 $(document).ready(function () {
   $(window).scroll(function () {
@@ -32,5 +32,3 @@ var typed = new Typed(".typing2", {
   backSpeed: 60,
   loop: true,
 });
-
-// Carousel
