@@ -16,10 +16,9 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <nav class="navbar"> <!--Navbar-->
         <div class="max-width">
             <div class="logo">
-                <a href="#">Olá!</a>
             </div>
             <ul class="menu">
                 <li><a href="#home">Início</a></li>
@@ -27,6 +26,7 @@
                 <li><a href="#projects">Projetos</a></li>
                 <li><a href="#skills">Tecnologias</a></li>
                 <li><a href="#contact">Contato</a></li>
+                <label for="switch"><input type="checkbox" id="switch"></label>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -38,7 +38,7 @@
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">Gabriel Sanchez </div>
-                <div class="text-2">Desenvolvedor <span class="typing"></span></div>
+                <div class="text-2">Desenvolvedor iniciante <span class="typing"></span></div>
                 <a href="#contact" class="message">Me envie sua mensagem!</a>
                 <div class="icon-card"></div>
                     <div class="home-icon">
@@ -54,10 +54,6 @@
                         <a href="mailto:gabrielsanchezsans@gmail.com" class="gmail">
                             <i class="fa-3x fa-solid fa-envelope "></i>
                         </a>
-                        <a href="https://discordapp.com/users/Gabriel%20Sanc#3636" class="discord">
-                            <i class="fa-3x fa-brands fa-discord"></i>
-                        </a>
-
                     </div>
                 </div>
             </div>
@@ -88,19 +84,16 @@
 
     <!--Projetos-->
 
-    <section class="projects" id="projects"> <!--Container-->
+    <section class="projects" id="projects"> 
         <div class="max-width">
             <h2 class="projects-title">Projetos</h2>
         </div>
-        <section>
-            <div class="container">
+
+            <div class="container"> <!--Container Carrossel-->
                 <div class="carousel">
                     <input type="radio" name="slides" checked="checked" id="slide-1">
                     <input type="radio" name="slides" id="slide-2">
                     <input type="radio" name="slides" id="slide-3">
-                    <input type="radio" name="slides" id="slide-4">
-                    <input type="radio" name="slides" id="slide-5">
-                    <input type="radio" name="slides" id="slide-6">
                     <ul class="carousel__slides">
                         <li class="carousel__slide">
                             <figure>
@@ -108,8 +101,8 @@
                                     <img src="src/img/embreve.jpg" alt="">
                                 </div>
                                 <figcaption>
-                                    <h3>Auto-Bot</h3>
-                                    Bot de atendimento para Whatsapp.
+                                    <h3>Em breve!</h3>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                     <span class="line">_____________________</span>
                                 </figcaption>
                             </figure>
@@ -120,6 +113,7 @@
                                     <img src="src/img/embreve.jpg" alt="">
                                 </div>
                                 <figcaption>
+                                    <h3>Em breve!</h3>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.    
                                     <span class="line">_____________________</span>               
                                 </figcaption>
@@ -131,41 +125,9 @@
                                     <img src="src/img/embreve.jpg" alt="">
                                 </div>
                                 <figcaption>
+                                    <h3>Em breve!</h3>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                     <span class="line">_____________________</span>                       
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="src/img/embreve.jpg" alt="">
-                                </div>
-                                <figcaption>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span class="line">_____________________</span>                         
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="src/img/embreve.jpg" alt="">
-                                </div>
-                                <figcaption>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.  
-                                    <span class="line">_____________________</span>                      
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li class="carousel__slide">
-                            <figure>
-                                <div>
-                                    <img src="src/img/embreve.jpg" alt="">
-                                </div>
-                                <figcaption>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    <span class="line">_____________________</span>                           
                                 </figcaption>
                             </figure>
                         </li>
@@ -180,19 +142,9 @@
                         <li>
                             <label for="slide-3"><img src="src/img/embreve.jpg" alt=""></label>
                         </li>
-                        <li>
-                            <label for="slide-4"><img src="src/img/embreve.jpg" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-5"><img src="src/img/embreve.jpg" alt=""></label>
-                        </li>
-                        <li>
-                            <label for="slide-6"><img src="src/img/embreve.jpg" alt=""></label>
-                        </li>
                     </ul>
                 </div>
             </div>
-        </section>
     </section>
 
     <!--Habilidades-->
